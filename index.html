@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>Challenge Encriptador</title>
+</head>
+
+<body>
+    <header>
+
+        <div>
+            <h1>Encriptador / Desencriptador</h1>
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="area-encriptado">
+        
+            <div class="area-encriptado-caja">
+                <div class="encriptado-caja-titulo"><h2>¡Ingrese el texto a encriptar/desencriptar!</h2></div>
+                
+                <div class="encriptado-caja-cuerpo">
+                    <textarea placeholder="Ingrese el texto a encriptar" id="zona-encriptado" name="encriptar"></textarea>
+                </div>
+                
+                <div class="encriptado-caja-botones">
+
+                    <div class="encriptado-caja-nota">
+                        <img src="photos/info-logo.png" alt="informacion">
+                        <p>Solo minùsculas</p>
+                    </div>
+                    <div>
+                        <button class="botones" onclick="botonEncriptar();">Encriptar</button>
+                        <button class="botones" onclick="botonDesencriptar();">Desencriptar</button>    
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+            <div class="area-encriptado-caja">
+                <div class="encriptado-caja-titulo"><h2>¡Su texto!</h2></div>
+                
+                <div class="encriptado-caja-cuerpo">
+                    <p id="texto-caja">Aun no hay texto!</p>
+                </div>
+                
+                <div class="encriptado-caja-botones">
+                    <button class="botones" id="boton-copiar" onclick="copiarTexto();">Copiar</button>
+                </div>
+            
+            </div>
+            
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div><h2>By @_angel_tl_ <br>All rights reserved</h2></div>
+
+    </footer>
+    
+</body>
+    <script src="script.js"></script>
+</html>
